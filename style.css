@@ -1,40 +1,67 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
 .navheader {
-  background-color: #fee3ec;
+  background-color: #781c68;
   color: white;
-  padding: 20px;
+  padding: 40px;
+}
+a {
+  text-decoration: none;
+  font-size: 30px;
+  color: aliceblue;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
 }
 footer {
-  background-color: #fee3ec;
-  color: #781c68;
+  background-color: #781c68;
+  color: white;
   padding: 15px;
   text-align: center;
 }
+input.btn {
+  float: right;
+  height: 40px;
+  width: 130px;
+  margin-top: 20px;
+}
 #empMain {
-  background-color: #a68dad;
-  color: white;
+  color: #781c68;
   padding: 15px;
-  text-decoration: underline;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 500px;
+  height: 350px;
+  border: solid;
+  border-color: black;
+  margin: 30px 50px;
 }
 input[type="text"] {
-  padding: 12px 20px;
+  padding: 6px;
   margin: 8px 0;
   border-radius: 4px;
 }
 input[type="text"]:focus {
-  background-color: lightblue;
+  background-color: rgb(130, 114, 143);
 }
 .h1H {
   font-family: Arial, Helvetica, sans-serif;
-  color: #781c68;
+  color: white;
+  display: none;
 }
-
+h2 {
+  margin-bottom: 20px;
+}
 .nav {
   align-content: left;
 }
 select {
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 6px;
+  margin: 8px;
+  width: 150px;
   border-radius: 4px;
 }
 
