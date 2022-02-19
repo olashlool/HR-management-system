@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Redressed;
+}
+header {
+  height: 100px;
+  background-color: rgb(40, 2, 53);
+  position: relative;
+  margin-bottom: 50px;
+}
+h1 {
+  background-color: rgb(40, 2, 53);
+  color: wheat;
+  padding: 10px;
+  margin: 20px;
+}
+.nav_link {
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  list-style-type: none;
+}
+
+.nav_link li {
+  display: inline-block;
+  padding-right: 200px;
+  padding-left: 20px;
+}
+a {
+  color: wheat;
+  text-decoration: none;
+}
+
+fieldset {
+  text-align: center;
+  width: 500px;
+  height: 350px;
+  margin-bottom: 30px;
+}
+
+.addEmployee {
+  float: center;
+  text-align: -webkit-center;
+}
+
+legend {
+  margin-bottom: 10px;
+}
+label {
+  font-size: 25px;
+}
+
+form#employeeForm {
+  text-align: left;
+  margin-left: 25px;
+}
+select#department {
+  width: 200px;
+}
+input[type="submit"] {
+  float: right;
+  width: 100px;
+  height: 35px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  height: 25px;
+}
+
+select {
+  height: 35px;
+  width: 150px;
+}
+
+footer {
+  background-color: rgb(40, 2, 53);
+  padding: 40px;
+  margin-top: 20px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 30px;
+  color: wheat;
+}
+.social {
+  font-size: 30px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.social li {
+  display: inline-block;
+  padding-right: 200px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.social a {
+  color: wheat;
+  text-decoration: none;
+}
+
+input#fullName {
+  margin-bottom: 20px;
+}
+select#department {
+  margin-bottom: 20px;
+}
+select#level {
+  margin-bottom: 20px;
+}
+input#image {
+  margin-bottom: 20px;
+}
+div#emplooyes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+div#marketingDepartment {
+  border-style: solid;
+  padding: 10px 35px;
+  margin-bottom: 30px;
+}
+div#recentlyEmployee {
+  border-style: solid;
+  padding: 10px 35px;
+  margin-bottom: 30px;
+}
+
+div#developmentDepartment {
+  border-style: solid;
+  padding: 10px 35px;
+  margin-bottom: 30px;
+}
+div#administrationDepartment {
+  border-style: solid;
+  padding: 10px 35px;
+  margin-bottom: 30px;
+}
+
+div#financeDepartment {
+  border-style: solid;
+  padding: 10px 35px;
+  margin-bottom: 30px;
+}

@@ -4,30 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HR-management-system</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Redressed&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
+            <ul class="nav_link">
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="accounting.html">ACCOUNTING</a></li>
             </ul>
         </nav>
     </header>
-    <main></main>
-    <footer>
+    <main>
+        <div id="empMain"></div>
+        <section class="addEmployee">
+            <fieldset>
+                <legend>Add a employee :</legend>
+                <form id="employeeForm">
+                    <br>
+                        <label for="fullName">Full name:</label>
+                        <input type="text" name="fullName" id="fullName" required />
+                    <br>
+                        <label for="department" required>Department</label>
+                        <select id="department" name="department" >
+                            <option selected disabled hidden>Choose Department</option>
+                            <option value="administration">Administration</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="development">Development</option>
+                            <option value="finance">Finance</option>
+                        </select>
+                    <br>
+                        <label for="level">Level</label>
+                        <select id="level" name="level">
+                            <option selected disabled hidden>Choose Level</option>
+                            <option value="Junior">Junior</option>
+                            <option value="Mid-Senior">Mid-Senior</option>
+                            <option value="Senior">Senior</option>
+                        </select>
+                    <br>
+                        <label for="image">image url</label>
+                        <input type="text" name="image" id="image"/>
+                    <br>
+                        <input type="submit" value="ADD" />
+                    <br>           
+            </form>
+        </fieldset>
+        </section>
+        <div id="emplooyes">
+            <div id ="administrationDepartment">
+                <h1>Administration Department</h1>
+            </div>
+            <div id ="marketingDepartment">
+                <h1>Marketing Department</h1>
 
-    </footer>
-        <div class="social">
-            <ul>
-                <li><a href="https://www.facebook.com/olashlool58/"><img src="images/facebook.png" alt="facebook" style="width: 50px;"></a></li>
-                <li><a href="https://github.com/olashlool"><img src="images/github.png" alt="github"style="width: 50px;"></a></li>
-                <li><a href="https://www.instagram.com/olashlool/"><img src="images/insta.png" alt="instagram"style="width: 50px;"></a></li>
-                <li><a href="https://www.linkedin.com/in/ola-m-al-shlool-6aa548222/"><img src="images/linkin.png" alt="linkin"style="width: 50px;"></a></li>
-                <p>HR-management-system &copy; 2022</p>
-            </ul>
+            </div>
+            <div id ="developmentDepartment">
+                <h1>Development Department</h1>
+            </div>
+            <div id ="financeDepartment">
+                <h1>Finance Department</h1>
+            </div>
+            <div id ="recentlyEmployee">
+                <h1>Recently Employee</h1>
+            </div>
+
         </div>
-    <script src="JS/app.js"></script>
+        <script src="JS/app.js"></script>
+    </main>
+    <footer>
+        <p>HR-management-system &copy; 2022</p>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/olashlool58/"><img src="images/facebook.png" alt="facebook" style="width: 50px;"></a></li>
+            <li><a href="https://github.com/olashlool"><img src="images/github.png" alt="github"style="width: 50px;"></a></li>
+            <li><a href="https://www.instagram.com/olashlool/"><img src="images/insta.png" alt="instagram"style="width: 50px;"></a></li>
+            <li><a href="https://www.linkedin.com/in/ola-m-al-shlool-6aa548222/"><img src="images/linkin.png" alt="linkin"style="width: 50px;"></a></li>
+        </ul>
+    </footer>
 </body>
 </html>
