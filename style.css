@@ -1,157 +1,68 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-family: Redressed;
+.navheader {
+  background-color: #fee3ec;
+  color: white;
+  padding: 20px;
 }
-header {
-  height: 100px;
-  background-color: rgb(40, 2, 53);
-  position: relative;
-  margin-bottom: 50px;
-}
-h1 {
-  background-color: rgb(40, 2, 53);
-  color: wheat;
-  padding: 10px;
-  margin: 20px;
-}
-.nav_link {
-  font-size: 30px;
-  text-align: center;
-  position: absolute;
-  top: 35%;
-  left: 0;
-  list-style-type: none;
-}
-
-.nav_link li {
-  display: inline-block;
-  padding-right: 200px;
-  padding-left: 20px;
-}
-a {
-  color: wheat;
-  text-decoration: none;
-}
-
-fieldset {
-  text-align: center;
-  width: 500px;
-  height: 350px;
-  margin-bottom: 30px;
-}
-
-.addEmployee {
-  float: center;
-  text-align: -webkit-center;
-}
-
-legend {
-  margin-bottom: 10px;
-}
-label {
-  font-size: 25px;
-}
-
-form#employeeForm {
-  text-align: left;
-  margin-left: 25px;
-}
-select#department {
-  width: 200px;
-}
-input[type="submit"] {
-  float: right;
-  width: 100px;
-  height: 35px;
-  margin-right: 20px;
-  margin-top: 20px;
-}
-
-input[type="text"] {
-  height: 25px;
-}
-
-select {
-  height: 35px;
-  width: 150px;
-}
-
 footer {
-  background-color: rgb(40, 2, 53);
-  padding: 40px;
-  margin-top: 20px;
-}
-
-footer p {
+  background-color: #fee3ec;
+  color: #781c68;
+  padding: 15px;
   text-align: center;
-  font-size: 30px;
-  color: wheat;
 }
-.social {
-  font-size: 30px;
-  text-align: center;
-  list-style-type: none;
+#empMain {
+  background-color: #a68dad;
+  color: white;
+  padding: 15px;
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+}
+input[type="text"] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+}
+input[type="text"]:focus {
+  background-color: lightblue;
+}
+.h1H {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #781c68;
 }
 
-.social li {
-  display: inline-block;
-  padding-right: 200px;
-  padding-left: 20px;
-  margin-top: 20px;
+.nav {
+  align-content: left;
+}
+select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
 }
 
-.social a {
-  color: wheat;
-  text-decoration: none;
-}
-
-input#fullName {
-  margin-bottom: 20px;
-}
-select#department {
-  margin-bottom: 20px;
-}
-select#level {
-  margin-bottom: 20px;
-}
-input#image {
-  margin-bottom: 20px;
-}
-div#emplooyes {
+.container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.emp {
+  width: 30%;
+  text-align: center;
+  margin: 1%;
+  margin-top: 5%;
 }
 
-p {
-  margin-bottom: 20px;
+.info {
+  background-color: #f9e4d4;
+  padding: 10px;
 }
 
-div#marketingDepartment {
-  border-style: solid;
-  padding: 10px 35px;
-  margin-bottom: 30px;
-}
-div#recentlyEmployee {
-  border-style: solid;
-  padding: 10px 35px;
-  margin-bottom: 30px;
+table,
+th,
+td {
+  border: 1px solid black;
 }
 
-div#developmentDepartment {
-  border-style: solid;
-  padding: 10px 35px;
-  margin-bottom: 30px;
-}
-div#administrationDepartment {
-  border-style: solid;
-  padding: 10px 35px;
-  margin-bottom: 30px;
-}
-
-div#financeDepartment {
-  border-style: solid;
-  padding: 10px 35px;
-  margin-bottom: 30px;
+table {
+  width: 50%;
+  margin: 20px auto;
 }

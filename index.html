@@ -1,88 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR-management-system</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Redressed&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="nav_link">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="accounting.html">ACCOUNTING</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div id="empMain"></div>
-        <section class="addEmployee">
-            <fieldset>
-                <legend>Add a employee :</legend>
-                <form id="employeeForm">
-                    <br>
-                        <label for="fullName">Full name:</label>
-                        <input type="text" name="fullName" id="fullName" required />
-                    <br>
-                        <label for="department" required>Department</label>
-                        <select id="department" name="department" >
-                            <option selected disabled hidden>Choose Department</option>
-                            <option value="administration">Administration</option>
-                            <option value="marketing">Marketing</option>
-                            <option value="development">Development</option>
-                            <option value="finance">Finance</option>
-                        </select>
-                    <br>
-                        <label for="level">Level</label>
-                        <select id="level" name="level">
-                            <option selected disabled hidden>Choose Level</option>
-                            <option value="Junior">Junior</option>
-                            <option value="Mid-Senior">Mid-Senior</option>
-                            <option value="Senior">Senior</option>
-                        </select>
-                    <br>
-                        <label for="image">image url</label>
-                        <input type="text" name="image" id="image"/>
-                    <br>
-                        <input type="submit" value="ADD" />
-                    <br>           
-            </form>
-        </fieldset>
-        </section>
-        <div id="emplooyes">
-            <div id ="administrationDepartment">
-                <h1>Administration Department</h1>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HR-management-system</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <header>
+         <nav class="navheader">
+            <h1 class="h1H">HR-management Page</h1>
+            <div class="nav">
+              <a href="index.html" >Home</a> 
+              <a href="accounting.html">Accounting</a>
             </div>
-            <div id ="marketingDepartment">
-                <h1>Marketing Department</h1>
-
+         </nav>
+      </header>
+      <main>
+         <div id="empMain">
+            <div id="formDiv">
+                <form id="form">
+                  <label for="fullName">Full Name :</label>
+                  <input type="text" id="fullName" name="fullName" required><br>
+                  <label for="department">Department :  </label>
+                  <select name="department" id="empdepartment">
+                      <option value="Administration">Administration</option>
+                      <option value="Marketing">Marketing</option>
+                      <option value="Development">Development</option>
+                      <option value="Finance">Finance</option>
+                  </select>
+                  <br>
+                  <label for="level">level :  </label>
+                  <select name="level" id="emplevel">
+                      <option value="Junior">Junior</option>
+                      <option value="Mid-Senior">Mid-Senior</option>
+                      <option value="Senior">Senior</option>
+                  </select>
+                  <br>
+                  <label for="empImage">Emplooye Image:  </label>
+                  <input type="text" id="empImage" name="empImage"><br>
+                  <input type="submit" value="Add Emplooye" class="btn">
+                </form>
             </div>
-            <div id ="developmentDepartment">
-                <h1>Development Department</h1>
-            </div>
-            <div id ="financeDepartment">
-                <h1>Finance Department</h1>
-            </div>
-            <div id ="recentlyEmployee">
-                <h1>Recently Employee</h1>
-            </div>
-
         </div>
-        <script src="JS/app.js"></script>
-    </main>
-    <footer>
-        <p>HR-management-system &copy; 2022</p>
-        <ul class="social">
-            <li><a href="https://www.facebook.com/olashlool58/"><img src="images/facebook.png" alt="facebook" style="width: 50px;"></a></li>
-            <li><a href="https://github.com/olashlool"><img src="images/github.png" alt="github"style="width: 50px;"></a></li>
-            <li><a href="https://www.instagram.com/olashlool/"><img src="images/insta.png" alt="instagram"style="width: 50px;"></a></li>
-            <li><a href="https://www.linkedin.com/in/ola-m-al-shlool-6aa548222/"><img src="images/linkin.png" alt="linkin"style="width: 50px;"></a></li>
-        </ul>
-    </footer>
-</body>
+         <div id="emplooyes" class="container"></div>
+         <script src="app.js"></script>
+      </main>
+      <footer>
+         <p >
+            &copy; 2022 copyright
+            <br/>
+            <a href=https://www.facebook.com>FB</a>
+         </p>
+      </footer>
+   </body>
 </html>
