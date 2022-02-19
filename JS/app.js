@@ -11,7 +11,7 @@ function HrMangment (id , fullName, department, level, image ){
 }
 
 
-const employee1 = new HrMangment(1000,"Ghazi Samer",["Administration"],["Senior"],`../images/boy.png`);
+const employee1 = new HrMangment(1000,"Ghazi Samer",["Administration"],["Senior"],`./images/boy.png`);
 const employee2 = new HrMangment(1001,"Lana Ali",["Finance"],["Senior"],`./images/girl.png`);
 const employee3 = new HrMangment(1002,"Tamara Ayoub",["Marketing"],["Senior"],`./images/girl.png`);
 const employee4 = new HrMangment(1003,"Safi Walid",["Administration"],["Mid-Senior"],`./images/boy.png`);
