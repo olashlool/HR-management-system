@@ -69,7 +69,6 @@ Employee.prototype.salary = function () {
         this.salary = sal - (sal * 0.075);
     }
 }
-getData();
 
 if (allEmployeeObject.length == 0) {
     let ghaziEmployee = new Employee(1000, "Ghazi Samer", department[0], level[2], '/img/boy.png');
@@ -113,3 +112,7 @@ function handleSubmit(event) {
     saveToLocalStorage();
     form.reset();
 }
+console.log(allEmployeeObject);
+console.log(getRandomId());
+getData();
+
