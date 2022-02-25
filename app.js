@@ -70,21 +70,23 @@ Employee.prototype.salary = function () {
     }
 }
 getData();
-
-if (allEmployeeObject.length == 0) {
-    let ghaziEmployee = new Employee(1000, "Ghazi Samer", department[0], level[2], './img/boy.png');
-    let lanaEmployee = new Employee(1001, "Lana Ali", department[3], level[2], './img/girl.png');
-    let tamaraEmployee = new Employee(1002, "Tamara Ayoub", department[1], level[2], './img/girl.png');
-    let saifEmployee = new Employee(1003, "Safi Walid", department[0], level[1], './img/boy.png');
-    let omarEmployee = new Employee(1004, "Omar Zaid", department[2], level[2], './img/boy.png');
-    let ranaEmployee = new Employee(1005, "Rana Saleh", department[2], level[0], './img/girl.png');
-    let hadiEmployee = new Employee(1006, "Hadi Ahmad", department[3], level[1], './img/boy.png');
-    
-    for (let i = 0 ; i<allEmployeeObject.length ; i++){
-        allEmployeeObjec[i].render();
+function infoData(){
+    if (allEmployeeObject.length == 0) {
+        let ghaziEmployee = new Employee(1000, "Ghazi Samer", department[0], level[2], './img/boy.png');
+        let lanaEmployee = new Employee(1001, "Lana Ali", department[3], level[2], './img/girl.png');
+        let tamaraEmployee = new Employee(1002, "Tamara Ayoub", department[1], level[2], './img/girl.png');
+        let saifEmployee = new Employee(1003, "Safi Walid", department[0], level[1], './img/boy.png');
+        let omarEmployee = new Employee(1004, "Omar Zaid", department[2], level[2], './img/boy.png');
+        let ranaEmployee = new Employee(1005, "Rana Saleh", department[2], level[0], './img/girl.png');
+        let hadiEmployee = new Employee(1006, "Hadi Ahmad", department[3], level[1], './img/boy.png');
+        
+        for (let i = 0 ; i<allEmployeeObject.length ; i++){
+            allEmployeeObjec[i].render();
+        }
+        saveToLocalStorage();
     }
-    saveToLocalStorage();
 }
+
 var getRandomId = function () {
     return Math.floor(Math.random() * (9000 - 1000)) + 1000;
 }
