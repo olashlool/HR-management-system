@@ -79,15 +79,10 @@ if (allEmployeeObject.length == 0) {
     let omarEmployee = new Employee(1004, "Omar Zaid", department[2], level[2], './img/boy.png');
     let ranaEmployee = new Employee(1005, "Rana Saleh", department[2], level[0], './img/girl.png');
     let hadiEmployee = new Employee(1006, "Hadi Ahmad", department[3], level[1], './img/boy.png');
-
-    ghaziEmployee.render();
-    lanaEmployee.render();
-    tamaraEmployee.render();
-    saifEmployee.render();
-    omarEmployee.render();
-    ranaEmployee.render();
-    hadiEmployee.render();
-
+    
+    for (let i = 0 ; i<allEmployeeObject.length ; i++){
+        allEmployeeObjec[i].render();
+    }
     saveToLocalStorage();
 }
 var getRandomId = function () {
