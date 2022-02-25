@@ -7,7 +7,7 @@ function Employee(employeeID, fullName, department, level, empImage) {
     this.department = department //[ Administration,Marketing,Development,Finance];
     this.level = level //[Junior,Mid-Senior, Senior];
     this.empImage = empImage;
-    
+
     this.salary();
 
     allEmployeeObject.push(this);
@@ -20,7 +20,7 @@ let emplooyesDiv = document.getElementById("emplooyes");
 
 Employee.prototype.render = function () {
     let emp = document.createElement("div");
-    
+
     emp.innerHTML = `
         <img alt="img" src="${this.empImage}" width="150" height="150">
         <div class="info">
@@ -69,6 +69,7 @@ Employee.prototype.salary = function () {
         this.salary = sal - (sal * 0.075);
     }
 }
+getData();
 
 if (allEmployeeObject.length == 0) {
     let ghaziEmployee = new Employee(1000, "Ghazi Samer", department[0], level[2], './img/boy.png');
@@ -112,7 +113,3 @@ function handleSubmit(event) {
     saveToLocalStorage();
     form.reset();
 }
-console.log(allEmployeeObject);
-console.log(getRandomId());
-getData();
-
